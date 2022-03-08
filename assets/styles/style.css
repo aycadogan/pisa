@@ -1,0 +1,1204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap");
+@font-face {
+  font-family: "fontello";
+  src: url("../fonts/fontello.eot?42101267");
+  src: url("../fonts/fontello.eot?42101267#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?42101267") format("woff2"), url("../fonts/fontello.woff?42101267") format("woff"), url("../fonts/fontello.ttf?42101267") format("truetype"), url("../fonts/fontello.svg?42101267#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.svg?42101267#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-facebook:before {
+  content: "\e800"; }
+
+.icon-instagram:before {
+  content: "\e801"; }
+
+.icon-twitter:before {
+  content: "\e802"; }
+
+.icon-menu:before {
+  content: "\e803"; }
+
+:root {
+  --primary-color: #a51c3d;
+  --secondary-color: #fffaf3;
+  --tertiary-color: #555;
+  --font-Montserrat: "Montserrat", sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  padding: 0; }
+
+.about-card-inner, .about-card-front, .about-card-back {
+  width: 100%;
+  height: 100%; }
+
+.about-heading, .testimonial__title, .contact-wrapper h5, .journey .header h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  text-align: center; }
+
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box; }
+
+/**
+Use a more readable tab size (opinionated).
+*/
+html {
+  -moz-tab-size: 4;
+  tab-size: 4; }
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0; }
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */ }
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted; }
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%; }
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */ }
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none; }
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0; }
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline; }
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item; }
+
+:root {
+  --primary-color: #a51c3d;
+  --secondary-color: #fffaf3;
+  --tertiary-color: #555;
+  --font-Montserrat: "Montserrat", sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  padding: 0; }
+
+.about-card-inner, .about-card-front, .about-card-back {
+  width: 100%;
+  height: 100%; }
+
+.about-heading, .testimonial__title, .contact-wrapper h5, .journey .header h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  text-align: center; }
+
+.about {
+  position: relative; }
+  .about-overlay {
+    width: 100%;
+    height: 260vw;
+    background-color: white;
+    margin-bottom: 0; }
+    @media (min-width: 501px) {
+      .about-overlay {
+        height: 200vw; } }
+    @media (min-width: 701px) {
+      .about-overlay {
+        height: 30vw; } }
+    @media (min-width: 1001px) {
+      .about-overlay {
+        height: 20vw; } }
+  .about-cards {
+    position: absolute;
+    z-index: 20;
+    gap: 1.5rem;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 2rem;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem; }
+    @media (min-width: 701px) {
+      .about-cards {
+        transform: translate(-50%, -50%);
+        gap: 2px;
+        width: 100%; } }
+    @media (min-width: 1001px) {
+      .about-cards {
+        top: 0;
+        gap: 1.5rem;
+        transform: translate(-50%, -50%); } }
+  .about-card {
+    width: 80vw;
+    height: 80vw;
+    font-family: var(--font-Montserrat);
+    border: transparent 0.7rem solid; }
+    @media (min-width: 501px) {
+      .about-card {
+        width: 60vw;
+        height: 60vw; } }
+    @media (min-width: 701px) {
+      .about-card {
+        width: 30vw;
+        height: 40vw; } }
+    @media (min-width: 1001px) {
+      .about-card {
+        width: 25vw;
+        height: 25vw; } }
+    .about-card-inner {
+      position: relative;
+      transition: transform 1s;
+      transform-style: preserve-3d; }
+    .about-card-front, .about-card-back {
+      border-radius: 3px;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      box-shadow: 1px 1px 5px rgba(115, 115, 115, 0.7); }
+    .about-card-front {
+      border: white 0.7rem solid;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .about-card-back {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: white;
+      color: var(--tertiary-color);
+      transform: translate(-50%, -50%) rotateY(180deg);
+      border: var(--primary-color) 2px solid; }
+      .about-card-back img {
+        width: 17%;
+        height: 17%;
+        display: block;
+        margin: 2rem auto; }
+        @media (min-width: 1201px) {
+          .about-card-back img {
+            margin: 2rem auto; } }
+      .about-card-back p {
+        display: block;
+        width: 88%;
+        margin: auto;
+        font-weight: 200;
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        line-height: 1.8rem; }
+    .about-card .study {
+      background: url(../../assets/images/study.png) center/cover no-repeat; }
+    .about-card .immigrate {
+      background: url(../../assets/images/immigrate.png) center/cover no-repeat; }
+    .about-card .more {
+      background: url(../../assets/images/more.png) center/cover no-repeat; }
+    .about-card-heading {
+      display: block;
+      padding: 1rem 0.5rem;
+      text-shadow: 1px 1px 5px rgba(115, 115, 115, 0.8);
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 3rem; }
+  .about .hover .about-card-inner {
+    transform: rotateY(180deg); }
+  .about-container {
+    font-family: var(--font-Montserrat);
+    height: 80vw;
+    background: url(../../assets/images/background.png) no-repeat center;
+    position: relative;
+    display: block;
+    background-size: 75vw 75vw; }
+    @media (min-width: 701px) {
+      .about-container {
+        height: 60vw;
+        background-size: 55vw 55vw; } }
+    @media (min-width: 901px) {
+      .about-container {
+        height: 50vw;
+        background-size: 45vw 45vw; } }
+    @media (min-width: 1025px) {
+      .about-container {
+        height: 40vw;
+        background-size: 35vw 35vw; } }
+    .about-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(248, 212, 212, 0.9)); }
+    .about-container p {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding-top: 2rem;
+      font-size: 1.5rem;
+      width: 80%;
+      line-height: 2.3rem;
+      color: var(--tertiary-color); }
+      @media (min-width: 501px) {
+        .about-container p {
+          width: 70%;
+          line-height: 3rem;
+          font-size: 2rem; } }
+      @media (min-width: 1001px) {
+        .about-container p {
+          width: 60%; } }
+  .about-heading {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    font-size: 2.3rem;
+    height: 1.6rem;
+    width: 13rem;
+    border-bottom: var(--primary-color) 2px solid;
+    z-index: 1; }
+    @media (min-width: 501px) {
+      .about-heading {
+        font-size: 3rem;
+        height: 1.9rem;
+        width: 16.5rem;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
+    @media (min-width: 1001px) {
+      .about-heading {
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
+
+:root {
+  --primary-color: #a51c3d;
+  --secondary-color: #fffaf3;
+  --tertiary-color: #555;
+  --font-Montserrat: "Montserrat", sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  padding: 0; }
+
+.about-card-inner, .about-card-front, .about-card-back {
+  width: 100%;
+  height: 100%; }
+
+.about-heading, .testimonial__title, .contact-wrapper h5, .journey .header h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  text-align: center; }
+
+.testimonial {
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  text-align: center; }
+  .testimonial__container {
+    padding: 20px 0;
+    position: relative;
+    background-color: rgba(165, 28, 62, 0.8); }
+    .testimonial__container::before {
+      content: " ";
+      width: 100%;
+      height: 100%;
+      background: url(../images/library_01.jpg) center center/cover no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+  .testimonial__detail {
+    padding: 20px;
+    margin-bottom: 30px; }
+  .testimonial__title {
+    font-family: var(--font-Montserrat);
+    height: 1.9rem;
+    width: 31.8rem;
+    font-size: 3rem;
+    color: #f7f7f7;
+    margin: 3rem auto 2.5rem auto;
+    border-bottom: #f7f7f7 2px solid; }
+  .testimonial__description {
+    font-size: 2rem;
+    color: #f7f7f7; }
+  .testimonial__cardswrapper {
+    margin: 30px auto;
+    padding: 75px 0;
+    background-color: #f7f7f7;
+    max-width: 900px; }
+    @media (min-width: 1200px) {
+      .testimonial__cardswrapper {
+        max-width: 1000px; } }
+  .testimonial__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 30px; }
+
+.card {
+  position: relative;
+  width: 250px;
+  font-size: 1.6rem;
+  height: 350px;
+  background-color: white;
+  box-shadow: 0px 2px 15px 2px gray; }
+  .card #bg-wave {
+    position: absolute;
+    left: 0;
+    bottom: 22%;
+    z-index: 1; }
+  .card #bg-box {
+    width: 100%;
+    height: 22.1%;
+    bottom: 0;
+    position: absolute;
+    background-color: #a51c3d; }
+  .card__container {
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box; }
+  .card__description {
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 0 10px;
+    line-height: 1.5rem; }
+    .card__description::before {
+      content: '"\A';
+      white-space: pre;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #a51c3d; }
+  .card__informetion {
+    position: relative;
+    z-index: 100;
+    margin-bottom: 2rem;
+    color: white; }
+  .card .img__wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto;
+    border: 2px solid white; }
+    .card .img__wrapper > img {
+      width: 100%;
+      height: 100%; }
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .testimonial {
+    height: 1500px; }
+    .testimonial__cards {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 4rem; }
+    .testimonial__cardswrapper {
+      max-width: 500px;
+      margin: 0 auto; } }
+
+@media (max-width: 425px) {
+  .testimonial {
+    height: 1500px; }
+    .testimonial__cards {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 4rem; }
+    .testimonial__cardswrapper {
+      max-width: 500px;
+      margin: 0 auto; }
+  .testimonial__detail {
+    height: 150px; }
+  .testimonial__description {
+    line-height: 2.5rem; }
+  .testimonial__cardswrapper {
+    max-width: 325px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 3rem; } }
+
+:root {
+  --primary-color: #a51c3d;
+  --secondary-color: #fffaf3;
+  --tertiary-color: #555;
+  --font-Montserrat: "Montserrat", sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  padding: 0; }
+
+.about-card-inner, .about-card-front, .about-card-back {
+  width: 100%;
+  height: 100%; }
+
+.about-heading, .testimonial__title, .contact-wrapper h5, .journey .header h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  text-align: center; }
+
+footer {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0; }
+
+footer img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 124px;
+  height: auto; }
+
+.social-links a i {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 30%; }
+  @media (max-width: 500px) {
+    .social-links a i {
+      font-size: 10px;
+      padding: 0px;
+      margin-top: 20%; } }
+  @media (min-width: 501px) and (max-width: 1440px) {
+    .social-links a i {
+      font-size: 15px;
+      padding: 5px;
+      margin-top: 20%; } }
+
+.details {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 2.4rem;
+  text-align: center; }
+  @media (max-width: 500px) {
+    .details {
+      font-size: 10px; } }
+  @media (min-width: 501px) and (max-width: 1440px) {
+    .details {
+      font-size: 12px;
+      padding: 5px; } }
+  .details p {
+    margin: 5px; }
+
+:root {
+  --primary-color: #a51c3d;
+  --secondary-color: #fffaf3;
+  --tertiary-color: #555;
+  --font-Montserrat: "Montserrat", sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  padding: 0; }
+
+.about-card-inner, .about-card-front, .about-card-back {
+  width: 100%;
+  height: 100%; }
+
+.about-heading, .testimonial__title, .contact-wrapper h5, .journey .header h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  text-align: center; }
+
+.contact-wrapper {
+  padding: 60px 0 40px 0;
+  background-color: var(--secondary-color);
+  border-radius: 3rem; }
+  .contact-wrapper h5 {
+    color: var(--primary-color);
+    font-size: 35px;
+    display: block;
+    margin: 2rem auto 10rem auto;
+    height: 2rem;
+    width: fit-content;
+    border-bottom: 2px var(--primary-color) solid; }
+    @media (max-width: 500px) {
+      .contact-wrapper h5 {
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-bottom: 5rem; } }
+  .contact-wrapper .contact {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 3rem; }
+    @media (max-width: 500px) {
+      .contact-wrapper .contact {
+        flex-direction: column; } }
+    .contact-wrapper .contact .contact-info-box {
+      width: 45%; }
+      @media (max-width: 1100px) {
+        .contact-wrapper .contact .contact-info-box {
+          width: 100%; } }
+    @media (min-width: 501px) and (max-width: 900px) {
+      .contact-wrapper .contact {
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-bottom: 5rem; } }
+    @media (min-width: 901px) and (max-width: 1100px) {
+      .contact-wrapper .contact {
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-bottom: 5rem; } }
+    @media (min-width: 1101px) and (max-width: 1440px) {
+      .contact-wrapper .contact {
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-bottom: 5rem; } }
+
+.input-box {
+  font-size: 20px;
+  color: var(--primary-color);
+  display: block;
+  width: 80%;
+  margin: auto; }
+  @media (max-width: 500px) {
+    .input-box {
+      font-size: 15px; } }
+  @media (min-width: 501px) and (max-width: 900px) {
+    .input-box {
+      font-size: 15px; } }
+  @media (min-width: 901px) and (max-width: 1100px) {
+    .input-box {
+      font-size: 15px; } }
+  @media (min-width: 1101px) and (max-width: 1440px) {
+    .input-box {
+      font-size: 15px; } }
+  .input-box #name,
+  .input-box #email,
+  .input-box #whatsapp,
+  .input-box #celephone {
+    border: var(--primary-color) 1px solid;
+    border-radius: 10px;
+    height: 35px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px; }
+    @media (max-width: 500px) {
+      .input-box #name,
+      .input-box #email,
+      .input-box #whatsapp,
+      .input-box #celephone {
+        height: 25px;
+        margin-top: 0px;
+        margin-bottom: 10px; } }
+    @media (min-width: 501px) and (max-width: 1440px) {
+      .input-box #name,
+      .input-box #email,
+      .input-box #whatsapp,
+      .input-box #celephone {
+        height: 25px;
+        margin-top: 0px;
+        margin-bottom: 10px; } }
+  .input-box #message {
+    height: 120px;
+    width: 100%;
+    border: var(--primary-color) 1px solid;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+    @media (max-width: 500px) {
+      .input-box #message {
+        height: 100px;
+        margin-top: 0px;
+        margin-bottom: 10px; } }
+    @media (min-width: 501px) and (max-width: 1440px) {
+      .input-box #message {
+        height: 100px;
+        margin-top: 0px;
+        margin-bottom: 10px; } }
+  .input-box #submit {
+    color: var(--primary-color);
+    border: var(--primary-color) 1px solid;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    width: 80%;
+    height: 35px;
+    padding: 5px;
+    margin: auto;
+    display: block; }
+    .input-box #submit:hover {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      letter-spacing: 2px; }
+
+.contact-details {
+  text-align: center;
+  width: 45%; }
+  @media (max-width: 1100px) {
+    .contact-details {
+      width: 100%; } }
+  .contact-details h3 {
+    color: var(--primary-color);
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 5rem; }
+    @media (max-width: 500px) {
+      .contact-details h3 {
+        font-size: 20px; } }
+    @media (min-width: 501px) and (max-width: 1440px) {
+      .contact-details h3 {
+        font-size: 20px; } }
+  .contact-details p {
+    color: var(--primary-color);
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 2rem; }
+    @media (max-width: 500px) {
+      .contact-details p {
+        font-size: 15px;
+        letter-spacing: 0px; } }
+    @media (min-width: 501px) and (max-width: 1440px) {
+      .contact-details p {
+        font-size: 15px; } }
+  .contact-details iframe {
+    width: 100%;
+    height: 25vw; }
+    @media (max-width: 500px) {
+      .contact-details iframe {
+        height: 80vw; } }
+    @media (max-width: 1100px) {
+      .contact-details iframe {
+        height: 50vw; } }
+
+.contact-modal {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-container {
+  margin: auto;
+  padding: 20px;
+  width: 80%; }
+
+.active {
+  display: block;
+  opacity: 0;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes show {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+:root {
+  --primary-color: #a51c3d;
+  --secondary-color: #fffaf3;
+  --tertiary-color: #555;
+  --font-Montserrat: "Montserrat", sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  padding: 0; }
+
+.about-card-inner, .about-card-front, .about-card-back {
+  width: 100%;
+  height: 100%; }
+
+.about-heading, .testimonial__title, .contact-wrapper h5, .journey .header h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  text-align: center; }
+
+.header-wrapper-services {
+  height: 550px;
+  background: var(--primary-color) url("/assets/images/services-header.jpg") center no-repeat;
+  background-size: cover; }
+
+.services {
+  padding-top: 5rem; }
+  .services h2 {
+    text-align: center;
+    font-size: 50px;
+    color: var(--primary-color);
+    margin-bottom: 3rem; }
+  .services p {
+    display: block;
+    width: 80%;
+    margin: auto;
+    color: #555;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    text-align: center; }
+  .services-container {
+    width: 90%;
+    margin: 3rem auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9); }
+    @media (max-width: 1000px) {
+      .services-container {
+        grid-template-columns: auto auto; } }
+    @media (max-width: 767px) {
+      .services-container {
+        display: block; } }
+    .services-container p {
+      width: 105%; }
+      @media (max-width: 1000px) {
+        .services-container p {
+          width: 90%; } }
+    .services-container::before {
+      content: " ";
+      width: 100%;
+      height: 100%;
+      background: url("/assets/images/background.png") center center/cover no-repeat;
+      background-size: 65vw 65vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    .services-container h3 {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--primary-color);
+      margin-bottom: 2rem; }
+    .services-container .service i {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+      text-align: center;
+      color: var(--secondary-color);
+      font-size: 3rem;
+      padding-top: 9px;
+      display: block;
+      margin: auto; }
+    .services-container .service p {
+      margin-top: 2rem;
+      margin-bottom: 1rem; }
+
+@media (max-width: 1000px) {
+  .service:nth-child(1),
+  .service:nth-child(3),
+  .service:nth-child(5),
+  .service:nth-child(8),
+  .service:nth-child(10),
+  .service:nth-child(12) {
+    display: none; } }
+
+body {
+  font: normal 1.6rem/1rem "Montserrat", Arial, Helvetica, sans-serif;
+  color: #383838; }
+
+a {
+  color: #383838; }
+
+.header-wrapper {
+  height: 640px;
+  background: var(--primary-color) url("/assets/images/background-can.jpg") center no-repeat;
+  background-size: cover; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  background: rgba(165, 28, 61, 0.8); }
+
+.logo {
+  display: inline-block;
+  width: 124px;
+  height: 124px;
+  background: transparent url("/assets/images/logo.png") center no-repeat;
+  background-size: contain;
+  text-indent: -9999px; }
+
+nav,
+.menu,
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  nav a,
+  .menu a,
+  .social-media a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2s ease-in; }
+    nav a:hover, nav a:focus,
+    .menu a:hover,
+    .menu a:focus,
+    .social-media a:hover,
+    .social-media a:focus {
+      opacity: 0.6; }
+
+nav {
+  justify-content: space-between;
+  text-transform: uppercase; }
+
+.menu a {
+  display: inline-block;
+  font-size: 2rem;
+  margin-right: 2rem; }
+  .menu a:last-child {
+    margin-right: 0; }
+
+.social-media {
+  margin-left: 3rem; }
+  .social-media a {
+    font-size: 3.2rem; }
+
+.journey {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 200px; }
+  .journey .header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .journey .header h3 {
+      font-size: 30px;
+      border-bottom: var(--primary-color) 2px solid;
+      color: var(--primary-color);
+      height: 1.9rem;
+      width: 15rem;
+      margin-top: 2rem;
+      margin-bottom: 2.5rem; }
+    .journey .header i {
+      color: var(--primary-color); }
+  .journey .cities {
+    position: relative;
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    @media (max-width: 1000px) {
+      .journey .cities {
+        display: flex;
+        flex-direction: column; } }
+    .journey .cities .first {
+      grid-column: 1 / 2; }
+    .journey .cities .second {
+      grid-column: 2 / 3; }
+    .journey .cities .third {
+      grid-column: 3 / 4; }
+    .journey .cities .fourth {
+      grid-column: 4 / 5; }
+    .journey .cities .city {
+      position: relative; }
+      .journey .cities .city h4 {
+        position: absolute;
+        z-index: 1;
+        bottom: 100px;
+        left: 30%;
+        font-size: 2.5rem;
+        color: #fff;
+        font-family: var(--font-Montserrat);
+        letter-spacing: 1px; }
+        @media (max-width: 1000px) {
+          .journey .cities .city h4 {
+            font-size: 2rem;
+            left: 40%; } }
+      .journey .cities .city img {
+        width: 100%;
+        height: 220px;
+        z-index: -1; }

@@ -1,0 +1,128 @@
+@import "variables";
+.testimonial {
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  &__container {
+    padding: 20px 0;
+    position: relative;
+    background-color: rgba(165, 28, 62, 0.8);
+    &::before {
+      content: " ";
+      width: 100%;
+      height: 100%;
+      background: url(../images/library_01.jpg) center center / cover no-repeat;
+      // background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  text-align: center;
+  &__detail {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    @extend %heading;
+    font-family: var(--font-Montserrat);
+    height: 1.9rem;
+    width: 31.8rem;
+    font-size: 3rem;
+    color: #f7f7f7;
+    margin: 3rem auto 2.5rem auto;
+    border-bottom: #f7f7f7 2px solid;
+  }
+  &__description {
+    font-size: 2rem;
+    color: #f7f7f7;
+  }
+  &__cardswrapper {
+    margin: 30px auto;
+    padding: 75px 0;
+    background-color: #f7f7f7;
+    max-width: 900px;
+    @media (min-width: 1200px) {
+      max-width: 1000px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 30px;
+  }
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  font-size: 1.6rem;
+
+  height: 350px;
+  background-color: white;
+  box-shadow: 0px 2px 15px 2px gray;
+  #bg-wave {
+    position: absolute;
+    left: 0;
+    bottom: 22%;
+    z-index: 1;
+  }
+  #bg-box {
+    width: 100%;
+    height: 22.1%;
+    bottom: 0;
+    position: absolute;
+    background-color: #a51c3d;
+  }
+
+  &__container {
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  &__description {
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 0 10px;
+    line-height: 1.5rem;
+    &::before {
+      content: '"\A';
+      white-space: pre;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #a51c3d;
+    }
+  }
+  &__informetion {
+    position: relative;
+    z-index: 100;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  & .img__wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto;
+    border: 2px solid white;
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  @import "./_testimonial_responsive/testimonial_tabletview";
+}
+@media (max-width: 425px) {
+  @import "./_testimonial_responsive/testimonial_mobileview";
+}

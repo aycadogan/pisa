@@ -1,0 +1,26 @@
+{
+  "name": "project-pisa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "node-sass -r --output-style nested src/scss/style.scss -o assets/styles",
+    "watch:sass": "npm run build:sass && npm run build:sass -- -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ertugrulhaskan/project-pisa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ertugrulhaskan/project-pisa/issues"
+  },
+  "homepage": "https://github.com/ertugrulhaskan/project-pisa#readme",
+  "devDependencies": {
+    "node": "^16.10.0",
+    "node-sass": "^6.0.1"
+  }
+}
